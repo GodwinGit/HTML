@@ -1,5 +1,7 @@
+function add(x,y) {
+    return x+y;
 
-var x = 5;
-var y = 2;
-var z = x + y;
-window.alert("Hey There")
+}
+console.log(add(2,3));
+console.log(add(-1,1));
+console.log(add(1,1,1))
