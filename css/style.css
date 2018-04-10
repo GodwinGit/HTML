@@ -20,17 +20,14 @@ h1 {
 
 }
 
-a:
-
-}
 
 #Project2{
-    padding-top: 250px;
+    padding-top: 300px;
 
 
 }
 #Project3{
-    padding-top: 250px;
+    padding-top: 300px;
 
 }
 
@@ -69,7 +66,17 @@ width:600px;
     padding: 10px;
 }
 
+table, th, td {
+    border: 0.5px solid black;
+}
 
+th, td {
+    padding: 30px;
+}
+
+table {
+    border-spacing: 10px;
+}
 
 
 
