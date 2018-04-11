@@ -106,3 +106,36 @@ table {
 #nav li a:hover {
     background-color: #111;
 }
+
+#Button1 {
+    background-color: black;
+    color: yellow;
+    float: right;
+    font-size: 24px;
+    border-radius: 12px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.4s;}
+
+#Button1:hover {
+    background-color: darkviolet;
+    color: white;
+
+    }
+#Button2 {
+    background-color: black;
+    color: yellow;
+    float: right;
+    font-size: 24px;
+    border-radius: 12px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.4s;}
+
+#Button2:hover {
+    background-color: darkviolet;
+    color: white;
+
+}
+
+#form1 {
+    padding-top: 100px;
+}

@@ -4,72 +4,132 @@
     <meta charset="UTF-8">
     <title>Practice</title>
     <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
-<script>
-    var x = 5;
-    var y = 2;
-    var z = x + y;
-    window.alert("Hey There");
-    window.alert("5 + 2 ="+z);
-    document.write("Hello World : )");
-    console.log("Hello World : |");
 
-function add(x,y) {
-return x+y;
+    <script type="text/javascript">
+        var x = 5;
+        var y = 2;
+        var z = x + y;
+        window.alert("Hey There");
+        window.alert("5 + 2 ="+z);
+        document.write("Hello World : )");
+        console.log("Hello World : |");
 
-}
-console.log(add(2,3));
-console.log(add(-1,1));
-console.log(add(1,1,1));
+        function add(x,y) {
+            return x+y;
 
-//Create a function accepts a number and outputs its square
+        }
+        console.log(add(2,3));
+        console.log(add(-1,1));
+        console.log(add(1,1,1));
 
-    function square (x) {
-        return x*x;
 
-    }
-    console.log(square(2));
-    console.log(square(5));
-    console.log(square(25));
+        //Create a function accepts a number and outputs its square
 
- //Create a function that accepts 3 numbers and returns the sum of them.
+        function square (x) {
+            return x*x;
 
-    function sum (x,y,z) {
-        return x+y+z;
+        }
+        console.log(square(2));
+        console.log(square(5));
+        console.log(square(25));
 
-    }
-    console.log(sum(2,5,7));
-    console.log(sum(5,54,86));
-    console.log(sum(25,78,4));
-    window.alert(sum(2,5,6));
+        //Create a function that accepts 3 numbers and returns the sum of them.
 
- //	Create a Person object with three values, name, age, occupation.
+        function sum (x,y,z) {
+            return x+y+z;
+
+        }
+        console.log(sum(2,5,7));
+        console.log(sum(5,54,86));
+        console.log(sum(25,78,4));
+        window.alert(sum(2,5,6));
+
+        //	Create a Person object with three values, name, age, occupation.
 
 
         var person = {
-        Name: "Godwin",
-        Age: "22",
-        Occupation: "Software Tester"
+            Name: "Godwin",
+            Age: "22",
+            Occupation: "Software Tester"
 
 
 //   Output the contents of that object, then edit them, and output again.
-    };
-    window.alert("Name: "+person.Name+ "  " +"Age: "+ person.Age+ "  " + "Occupation: "+ person.Occupation);
-person.Name = "Abdi";
-    person.Age = "24";
-    person.Occupation = "Software Developer";
+        };
+        window.alert("Name: "+person.Name+ "  " +"Age: "+ person.Age+ "  " + "Occupation: "+ person.Occupation);
+        person.Name = "Abdi";
+        person.Age = 24;
+        person.Occupation = "Software Developer";
 
-    window.alert("Name: "+person.Name+ "  " +"Age: "+ person.Age+ "  " + "Occupation: "+ person.Occupation);
+        alert("Name: "+person.Name+ "  " +"Age: "+ person.Age+ "  " + "Occupation: "+ person.Occupation);
+
+//	Create a button that calls a function when clicked.
+
+        function sayHello() {
+    alert("Hello")
+}
+
+// Create a button that increases the age of your Person object.
+
+        function increaseAge() {
+    person.Age++;
+            alert("Name: "+person.Name+ "  " +"Age: "+ person.Age+ "  " + "Occupation: "+ person.Occupation);
+}
+
+    </script>
 
 
 
+
+</head>
+<body>
+
+<input id="Button1" type="button" onclick="sayHello();" value="Click me" />
+<input id="Button2" type="button" onclick="increaseAge();" value="Increase Age" />
+
+
+
+<form id="form1">
+    First name:<br>
+    <input id="nameInput" type="text" name="firstname" value=""><br>
+    Occupation:<br>
+    <input id="occupationInput" type="text" occupation="Occupation" value=""><br>
+    Age:<br>
+    <input id="ageInput" type="text" age="age" value=""><br><br>
+    <input id="submit" type="submit" value="Submit" onclick="collectFunction()">
+</form>
+
+<script>
+    function collectFunction() {
+        person.Name = document.getElementById("nameInput").value;
+        person.Age = document.getElementById("ageInput").value;
+        person.Occupation = document.getElementById("occupationInput").value;
+        alert("Name: "+person.Name+ "  " +"Age: "+ person.Age+ "  " + "Occupation: "+ person.Occupation);
+
+    }
+</script>
+
+<script>
+// Create a variable with  “ He said “My name is Elliott” ”as the value, and display it.
+var heSaid = "He said my name is Elliot";
+    alert(heSaid);
+//Using String Methods, convert this string to uppercase, and display it
+    heSaid = heSaid.toUpperCase();
+    alert(heSaid);
+//
+ var str1 = "Cool";
+var str2 = "Alright";
+var int1 = "25";
+
+var conCat = str1.concat(str2, int1);
+alert(conCat)
+conCat.concat()
+
+var random = new Array("Golf","Football","Tennis")
+    
 
 
 </script>
 
-
-<input type="button" onclick=sum(2,5,6) value="Sum" />
-
 </body>
 </html>
+
