@@ -227,8 +227,40 @@ while(randomNumber > 1) {
     }
 }
 
+function string4(word, count) {
+
+//We’ll say that a “triple” in a string is a character appearing three times in a row. Create a function that accepts a string and returns the amount of times a triple
+//exists in that string.
+// (Recurssive)
+
+    if(word.length < 3) {
+        console.log("There were " + count + " triple's");
+    } else {
+        var currentLetter = word[0];
+
+        if(currentLetter == word[1] && currentLetter == word[2]) {
+            count = +count + 1;
+        }
+        console.log(word + " " + count);
+        string4(word.substring(1, word.length ), count);
+    }
+//We’ll say that a “triple” in a string is a character appearing three times in a row. Create a function that accepts a string and returns the amount of times a triple
+//exists in that string.
+// (For loop)
+    var count = 0;
+    for (var i = 0; i < (word.length - 2); i++) {
+        var currentLetter = word[i];
+
+        if(currentLetter == word[i+1] && currentLetter == word[i+2]) {
+            count = +count + 1;
+        }
+    }
+    console.log("There were " + count + " triple's");
+}
 
 
+
+string4("xxxabyyyycd", 0);
 </script>
 
 </body>
